@@ -33,7 +33,7 @@ The simulation is writen in Matlab in the quadrotor_sim function in the `quadrot
 The simulation uses the initial conditions and ODE45 to solve the equations of motion for the quadrotor and return its motion over time. An EventStop function stops the simulation if the drone hits the ground. 
 
 ## Test Cases
-To validate the simulation, a series of test cases was used. The test cases use specific thrusts and initial conditions to test a range of simple and complex situations.
+To validate the simulation, a series of test cases was used. The test cases use specific thrusts and initial conditions to test a range of simple and complex situations. The test case code is included in the `quadrotor_dynamics_analysis.mlx` live script.
 
 |    | Test Case                            | Thrusts (N)             | Initial Position (m) [x,y,z] | Initial Velocity (m/s) [vx,vy,vz] | Initial Euler Angles (rad) [$\psi$, $\theta$, $\phi$] | Initial Angular Velocity (rad/s) [$\omega_1$,$\omega_2$,$\omega_3$] | Expected Behavior                                                 |
 | -- | ------------------------------------ | ----------------------- | ---------------------------- | --------------------------------- | --------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -56,5 +56,29 @@ All simulation tests exhibited expected behavior. Trajectory, velocity, accelera
 This is the "Throw a drone across the room" case.
 
 ![Case 3 Trajectory](./media/case_3/case_3_traj.gif)
-|:------------:|:------------:|
-|![](./media/case_3/case_3_ang_vel.png)|![](./media/case_3/case_3_accel.png)|
+|             |             |
+:------------:|:------------:
+![](./media/case_3/case_3_vel.png)|![](./media/case_3/case_3_accel.png)
+![](./media/case_3/case_3_ang_pos.png)|![](./media/case_3/case_3_ang_vel.png)
+
+
+### Case 6: Horizontal Flight
+![Case 6 Trajectory](./media/case_6/case_6_traj.gif)
+|             |             |
+:------------:|:------------:
+![](./media/case_6/case_6_vel.png)|![](./media/case_6/case_6_accel.png)
+![](./media/case_6/case_6_ang_pos.png)|![](./media/case_6/case_6_ang_vel.png)
+
+### Case 7: 1 Under-Powered Motor
+![Case 7 Trajectory](./media/case_7/case_7_traj.gif)
+|             |             |
+:------------:|:------------:
+![](./media/case_7/case_7_vel.png)|![](./media/case_7/case_7_accel.png)
+![](./media/case_7/case_7_ang_pos.png)|![](./media/case_7/case_7_ang_vel.png)
+
+### Case 11: Motor Dies in Flight
+![Case 11 Trajectory](./media/case_11/case_11_traj.gif)
+|             |             |
+:------------:|:------------:
+![](./media/case_11/case_11_vel.png)|![](./media/case_11/case_11_accel.png)
+![](./media/case_11/case_11_ang_pos.png)|![](./media/case_11/case_11_ang_vel.png)
