@@ -82,3 +82,6 @@ This is the "Throw a drone across the room" case.
 :------------:|:------------:
 ![](./media/case_11/case_11_vel.png)|![](./media/case_11/case_11_accel.png)
 ![](./media/case_11/case_11_ang_pos.png)|![](./media/case_11/case_11_ang_vel.png)
+
+## Project Walkthrough Video
+A walkthrough of this project and its results can be found [here on YouTube](https://youtu.be/OGj28qGN8lU).
